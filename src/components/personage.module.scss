@@ -1,0 +1,54 @@
+// for background
+$COLOR_BACKGROUND_PERSONAGE: rgba(248, 246, 246, 0.9411764706);
+$WIDTH_BACKGROUND_PERSONAGE: 332px;
+$HIGTH_BACKGROUND_PERSONAGE: 381px;
+$IMAGE_PERSONAGE_BOX_SHADOW: 0px 15px 25px 0px rgba(0, 0, 0, 0.15);
+
+// for image
+$WIDTH_IMAGE_PERSONAGE: 300px;
+$HIGTH_IMAGE_PERSONAGE: 300px;
+$TOP_IMAGE_PERSONAGE: -0.96rem;
+$INDEX_BACKGROUND_PERSONAGE: 2;
+$INDEX_IMAGE_PERSONAGE: 10;
+
+// for all
+$BORDER_RADIOS: 10px;
+
+.backgroundImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  position: relative;
+  width: $WIDTH_BACKGROUND_PERSONAGE;
+  height: $HIGTH_BACKGROUND_PERSONAGE;
+  border-radius: $BORDER_RADIOS;
+  background: $COLOR_BACKGROUND_PERSONAGE;
+  z-index: $INDEX_IMAGE_PERSONAGE;
+}
+img {
+  position: absolute;
+  top: $TOP_IMAGE_PERSONAGE;
+  width: $WIDTH_IMAGE_PERSONAGE;
+  height: $HIGTH_IMAGE_PERSONAGE;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  z-index: $INDEX_IMAGE_PERSONAGE;
+  -webkit-box-shadow: $IMAGE_PERSONAGE_BOX_SHADOW;
+  box-shadow: $IMAGE_PERSONAGE_BOX_SHADOW;
+  border-radius: $BORDER_RADIOS;
+}
+h5 {
+  position: absolute;
+  bottom: 2.69rem;
+  color: #000;
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  z-index: 3;
+  top: 287px;
+}
